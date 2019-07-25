@@ -128,32 +128,33 @@
 				
 					<div class="section-top-border">
 						<h3>Image Gallery</h3>
-						<div class="row gallery-item">
-							<div class="col-md-4">
-								<a href="img/elements/g1.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/elements/g1.jpg);"></div></a>
-							</div>
-							<div class="col-md-4">
-								<a href="img/elements/g2.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/elements/g2.jpg);"></div></a>
-							</div>
-							<div class="col-md-4">
-								<a href="img/elements/g3.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/elements/g3.jpg);"></div></a>
-							</div>
-							<div class="col-md-6">
-								<a href="img/elements/g4.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/elements/g4.jpg);"></div></a>
-							</div>
-							<div class="col-md-6">
-								<a href="img/elements/g5.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/elements/g5.jpg);"></div></a>
-							</div>
-							<div class="col-md-4">
-								<a href="img/elements/g6.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/elements/g6.jpg);"></div></a>
-							</div>
-							<div class="col-md-4">
-								<a href="img/elements/g7.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/elements/g7.jpg);"></div></a>
-							</div>
-							<div class="col-md-4">
-								<a href="img/elements/g8.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/elements/g8.jpg);"></div></a>
-							</div>
-						</div>
+						 <!-- The grid: four columns -->
+<div class="row">
+	<div class="column">
+	  <img src="img/elements/g1.jpg" alt="Nature" onclick="myFunction(this);">
+	</div>
+	<div class="column">
+	  <img src="img/elements/g2.jpg" alt="Snow" onclick="myFunction(this);">
+	</div>
+	<div class="column">
+	  <img src="img/elements/g3.jpg" alt="Mountains" onclick="myFunction(this);">
+	</div>
+	<div class="column">
+	  <img src="img/elements/g4.jpg" alt="Lights" onclick="myFunction(this);">
+	</div>
+  </div>
+  
+  <!-- The expanding image container -->
+  <div class="container">
+	<!-- Close the image -->
+	<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+	<!-- Expanded image -->
+	<img id="expandedImg" style="width:100%">
+  
+	<!-- Image text -->
+	<div id="imgtext"></div>
+  </div> 
 					</div>
 				</div>
 			</div>
